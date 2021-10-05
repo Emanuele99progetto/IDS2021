@@ -112,6 +112,7 @@ public class View {
 		System.out.println("Inserisci password!");
 		String password = readConsoleString();
 		System.out.println("Inserisci il tuo ruolo");
+		System.out.println(java.util.Arrays.asList(Ruolo.values()));
 		if (password.length() > 30 || password.length() < 5) {
 			System.out.println("Lunghezza password errata, inserire lunghezza tra 5 e 30");
 		} else {

@@ -268,7 +268,7 @@ public class GestoreDB {
 			prepared.setString(1, codcorriere);
 			prepared.setInt(2, codice);
 			prepared.executeUpdate();
-			System.out.println("Il corriere è stato aggiornato nel db con successo");
+			System.out.println("La spesa è stata aggiornata nel db con successo");
 
 		} catch (SQLException e) {
 			e.printStackTrace();

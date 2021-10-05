@@ -18,7 +18,10 @@ public class Utente {
 		return password;
 	}
 
-	public boolean setPassword(String oldpassword, String newpassword) {
+	public boolean setPassword(String oldpassword, String newpassword) throws IllegalArgumentException {
+		if (newpassword.length() < 5 || newpassword.length() >30 )
+		{throw new IllegalArgumentException("Password errata, lunghezza consentita tra 5 e 30 caratteri");}
+	
 		if (!oldpassword.equals( getPassword())) {
 			System.out.println(oldpassword+" "+getPassword());
 			System.out.println("Password attuale errata");
